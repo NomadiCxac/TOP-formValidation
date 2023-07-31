@@ -1,0 +1,82 @@
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: blue;
+}
+
+.formBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 40%;
+    background: rgb(78, 77, 77);
+}
+
+.formContent {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    width: 93%;
+    background: white;
+}
+
+.formContentHeader {
+    margin-left: 0.5em;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+
+.inputWrapper > input {
+    width: 55%;
+    color: black;
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.inputWrapper > input.invalid {
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.inputWrapper > input.valid {
+    border: 1px solid green;
+    background-color: rgba(30, 255, 0, 0.1);
+}
+
+.inputWrapper > input.invalid:focus {
+    border: none;
+    background-color: white;
+}
+
+.inputFeedbackMessage {
+    height: 20px;
+    margin-top: -0.5em;
+}
+
+
+.submitButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 4em;
+    width: 100%;
+}
+
+.submitButton{
+    color: white;
+    background: green;
+    margin-right: 2em;
+    font-size: x-large;
+    height: 35px;
+    width: 100px;
+}
